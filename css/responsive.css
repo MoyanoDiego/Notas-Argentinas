@@ -1,0 +1,616 @@
+/* ------------------------- FORMULARIO NEWSLETTER ------------------------- */
+
+.contenedor-formulario {
+  margin: auto;
+  width: 80%;
+}
+
+.contenedor-formulario h3 {
+  font-size: 1.5rem;
+}
+
+.formulario {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.boton-formulario {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid white;
+  box-shadow: inset 0 0 0 0 var(--ArgAmarillo);
+  background-color: var(--ArgCeleste);
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Kalam-regular";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  -ms-transition: ease-out 0.4s;
+  -o-transition: ease-out 0.4s;
+}
+
+.formulario .boton-formulario:hover {
+  box-shadow: inset 0 100px 0 0 var(--ArgAmarillo);
+}
+
+#email {
+  width: 40%;
+  padding: 0.3rem;
+  height: 2.2rem;
+  border-color: var(--ArgCeleste);
+}
+
+/* ------------------------- MEDIA DE 1050 PIXELES ------------------------- */
+@media screen and (max-width: 1050px) {
+  /* ------------------------- PAGINA PRINCIPAL NAV Y HEADER ------------------------- */
+  .navegacion,
+  .portada,
+  .seccion1 p,
+  .encabezado_noticias,
+  .notas {
+    width: 95%;
+  }
+
+  /* ------------------------- TEXTOS Y LOGO NAVEGACIÓN ------------------------- */
+
+  .nav ul li a {
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .contacto {
+    font-size: 1rem;
+  }
+
+  /* ------------------------- PORTADA TITULO, PARRAFO E IMAGEN ------------------------- */
+
+  .portada {
+    height: 40%;
+  }
+
+  .titulo {
+    font-size: 3rem;
+  }
+
+  .parrafo-titulo {
+    font-size: 1.2rem;
+  }
+
+  .portada img {
+    width: 100px;
+    left: 10rem;
+  }
+
+  .pop {
+    width: 95%;
+    left: 1.5%;
+    top: 50%;
+  }
+
+  /* ------------------------- SECCIÓN 1 GENEROS ------------------------- */
+
+  .seccion1 h2 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+
+  #generos {
+    position: absolute;
+    top: 9rem;
+  }
+
+  /* ------------------------- CARRUSEL DE IMÁGENES ------------------------- */
+
+  .contenedor_carrusel {
+    width: 95%;
+  }
+
+  .carrusel_imagenes a {
+    font-size: 1.3rem;
+  }
+
+  .carrusel_imagenes a img {
+    width: 300px;
+  }
+
+  .flecha_izq,
+  .flecha_der {
+    width: 2rem;
+    height: 50%;
+    font-size: 1.5rem;
+  }
+
+  /* ------------------------- SECCION 2 NOTICIAS ------------------------- */
+
+  .seccion2 h2 {
+    font-size: 1.8rem;
+  }
+
+  .notas {
+    grid-template-areas: "principal principal principal" "secundaria secundaria terciaria";
+  }
+
+  .nota_tipo {
+    font-size: 0.7rem;
+  }
+
+  .subtitulo_articulo1 {
+    font-size: 1rem;
+  }
+
+  .notas h3 {
+    font-size: 1.3rem;
+  }
+
+  /* ------------------------- FOOTER ------------------------- */
+
+  .redes,
+  .footer {
+    width: 95%;
+    margin: auto;
+  }
+
+  .redes h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer1,
+  .footer2 {
+    font-size: 1.3rem;
+  }
+
+  footer ul li a img {
+    width: 2.5rem;
+  }
+
+  /* ------------------------- PAGINAS DE LOS GENEROS ------------------------- */
+
+  section {
+    width: 95%;
+  }
+
+  .pol-izq {
+    margin-left: 0;
+  }
+
+  .pol-der {
+    margin-right: 0;
+  }
+
+  iframe {
+    width: 80%;
+  }
+  .contenedor-formulario {
+    width: 95%;
+  }
+}
+
+/* ------------------------- ORIENTACIÓN HORIZONTAL ------------------------- */
+
+@media (orientation: landscape) {
+  .pop {
+    top: 70%;
+  }
+
+  .seccion1 h2 {
+    padding-top: 8em;
+  }
+}
+
+/* ------------------------- VERSION INTERMEDIA PARA FORMULARIO DE CONTACTO ------------------------- */
+
+@media screen and (max-width: 727px) {
+  .logo img {
+    margin-left: 0.5rem;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 1rem;
+    width: 100%;
+  }
+
+  #email {
+    width: 80%;
+  }
+
+  .boton-formulario {
+    width: 83%;
+  }
+
+  .boton-formulario:active {
+    background-color: var(--ArgAmarillo);
+  }
+}
+
+/* --------------------------------------- VERSION MOBILE ------------------------------------------ */
+
+@media screen and (max-width: 660px) {
+  .portada {
+    position: relative;
+    top: 7rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulo {
+    width: auto;
+    margin: auto;
+  }
+
+  .logo {
+    position: fixed;
+    z-index: 5000;
+    margin-top: 8px;
+  }
+
+  .parrafo-titulo {
+    font-size: 1rem;
+    text-align: left;
+    width: auto;
+    padding-top: 1rem;
+  }
+
+  /* ------------------------- MENU DE NAVEGACIÓN RESPONSIVE ------------------------- */
+  .navegacion {
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    vertical-align: middle;
+    background-color: var(--ArgCeleste);
+    box-shadow: 0px 0px 19px rgb(90, 90, 90);
+  }
+
+  .burguer-menu {
+    display: block;
+  }
+
+  .burguer-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 4000;
+    background-color: var(--ArgBlanco);
+    padding: 0.1rem 0.1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .burguer-menu div {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    margin: 6px;
+    background-color: var(--ArgAmarillo);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+
+  /* ------------------------- BOTON CERRAR MENU X ------------------------- */
+  .barras .linea1 {
+    transform: rotate(-45deg) translate(-6px, 7px);
+    -webkit-transform: rotate(-45deg) translate(-6px, 7px);
+    -moz-transform: rotate(-45deg) translate(-6px, 7px);
+    -ms-transform: rotate(-45deg) translate(-6px, 7px);
+    -o-transform: rotate(-45deg) translate(-6px, 7px);
+  }
+  .barras .linea2 {
+    opacity: 0;
+  }
+  .barras .linea3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+    -webkit-transform: rotate(45deg) translate(-6px, -7px);
+    -moz-transform: rotate(45deg) translate(-6px, -7px);
+    -ms-transform: rotate(45deg) translate(-6px, -7px);
+    -o-transform: rotate(45deg) translate(-6px, -7px);
+  }
+
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateZ(50px);
+      -webkit-transform: translateZ(50px);
+      -moz-transform: translateZ(50px);
+      -ms-transform: translateZ(50px);
+      -o-transform: translateZ(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateZ(0px);
+      -webkit-transform: translateZ(0px);
+      -moz-transform: translateZ(0px);
+      -ms-transform: translateZ(0px);
+      -o-transform: translateZ(0px);
+    }
+  }
+  /* ------------------------- FIN BOTON CERRAR MENU X ------------------------- */
+
+  .nav_links {
+    position: fixed;
+    z-index: 2000;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--ArgAmarillo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: all 0.5s ease-in;
+  }
+
+  .elemNav {
+    margin: 2.5rem 0;
+  }
+
+  .carrusel_imagenes a img {
+    width: 200px;
+  }
+
+  .notas {
+    grid-template-areas: "principal principal principal" "secundaria secundaria secundaria" "terciaria terciaria terciaria";
+  }
+
+  .footer1,
+  .footer2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer2 ul li {
+    margin: 0.5rem;
+  }
+
+  /* ------------------------- Caja de comentarios Facebook ------------------------- */
+
+  .fb-comentarios {
+    width: 95%;
+  }
+
+  /* ------------------------- FOOTER ------------------------- */
+  footer {
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .redes h2 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .redes p {
+    margin-bottom: 0;
+  }
+
+  .footer {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer2 ul li,
+  .footer1 ul li a,
+  .redes p {
+    font-size: 1.3rem;
+  }
+
+  /* ------------------------- SECCION NOTICIAS ------------------------- */
+  article h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  article figure {
+    margin: 0;
+    margin-top: 1rem;
+    width: 95%;
+  }
+
+  article p {
+    font-size: 1.3rem;
+  }
+
+  .btn-siguiente-anterior {
+    font-size: 1rem;
+  }
+
+  /* ------------------------- ARTICULOS SECCION GENEROS ------------------------- */
+  .articulo_genero {
+    margin-bottom: 1rem;
+  }
+
+  .seccion-img {
+    width: 160px;
+    height: 160px;
+  }
+  iframe {
+    width: 95%;
+    height: 50%;
+  }
+
+  /* ------------------------- IMAGENES POLAROID DE LAS SECCIONES GENEROS ------------------------- */
+
+  .pol-izq {
+    margin-right: 1.5rem;
+  }
+
+  .pol-der {
+    margin-left: 1.5rem;
+  }
+
+  /* ------------------------- TABLAS DE MEJORES DISCOS - GENEROS  ------------------------- */
+
+  table {
+    table-layout: auto;
+  }
+
+  table thead tr th {
+    font-size: 1.3rem;
+  }
+
+  table tbody tr td {
+    font-size: 1.2rem;
+  }
+
+  table tbody tr td img {
+    width: 70px;
+    height: 70px;
+  }
+
+  th,
+  td,
+  caption {
+    padding: 1rem 0.5rem;
+  }
+
+  th {
+    display: none;
+  }
+  td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  .top_artistas > td:nth-of-type(1)::before {
+    content: "PORTADA: ";
+    font-weight: bold;
+  }
+  .top_artistas > td:nth-of-type(2)::before {
+    content: "TITULO: ";
+    font-weight: bold;
+  }
+  .top_artistas > td:nth-of-type(3)::before {
+    content: "ARTISTA: ";
+    font-weight: bold;
+  }
+
+  .top_artistas > td:nth-of-type(4)::before {
+    content: "AÑO: ";
+    font-weight: bold;
+  }
+
+  .top_artistas td:first-child {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .videoArtista {
+    padding: 1rem 0;
+  }
+  .videoArtista iframe {
+    height: 350px;
+  }
+
+  .listaCanciones {
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .listaCanciones ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ------------------------- ATAJOS A OTROS GÉNEROS ------------------------- */
+
+  .otros-generos {
+    display: grid;
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .otros-generos a {
+    width: 100%;
+  }
+
+  .otros-generos a:nth-child(5) {
+    grid-column: 1 / 3;
+  }
+
+  .otros-generos a img {
+    width: 100%;
+  }
+}
+/* ------------------------- CORRECCION DE IMAGEN DE PORTADA PARA 608 PIXELES ------------------------- */
+
+@media screen and (max-width: 623px) {
+  .pop {
+    top: 70%;
+  }
+
+  .seccion1 h2 {
+    padding-top: 16rem;
+  }
+}
+
+/* ------------------------- CLASES ACTIVAS PARA JAVASCRIPT ------------------------- */
+
+.nav-active {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+}
+
+/* ------------------------- RESPONSIVE ESPECÍFICOS PARA GLAXY NOTE ------------------------- */
+
+/* ------------------------- galaxy note 20 ------------------------- */
+@media (min-height: 915px), screen and (orientation: landscape) {
+  .pop {
+    top: 55%;
+  }
+}
+
+/* ------------------------- galaxy note 20 ultra ------------------------- */
+@media (min-height: 833px), screen and (orientation: landscape) {
+  .pop {
+    top: 55%;
+  }
+}
+
+/* ------------------------- galaxy s10 ------------------------- */
+@media (min-height: 760px), screen and (orientation: landscape) {
+  .pop {
+    top: 60%;
+  }
+}
+
+/* ------------------------- Ipad / OS ------------------------- */

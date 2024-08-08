@@ -1,0 +1,158 @@
+table tbody tr td img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  box-shadow: 4px 4px 6px rgb(0, 0, 0);
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid rgba(117, 170, 219, 0.6);
+}
+
+th,
+td,
+caption {
+  padding: 0.5rem;
+}
+
+caption {
+  font-size: 1.5rem;
+}
+
+th {
+  background-color: rgba(117, 170, 219, 0.6);
+  color: var(--ArgBlanco);
+  font-size: 2rem;
+  font-family: "Kalam-bold";
+}
+
+td {
+  font-size: 1.5rem;
+}
+
+tbody tr:nth-child(4n - 1) {
+  background-color: rgba(117, 170, 219, 0.6);
+  color: var(--ArgBlanco);
+}
+
+/* ------------------------- CLASES PARA DETALLES DE LOS ARTISTAS ------------------------- */
+
+.top_artistas {
+  cursor: pointer;
+  position: relative;
+  z-index: 5000;
+}
+
+.top_artistas:hover {
+  box-shadow: inset 0px 0px 180px rgba(252, 191, 69, 0.7);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.desplegable {
+  opacity: 0;
+  position: absolute;
+}
+
+.mostrarDesplegable {
+  opacity: 1;
+  position: relative;
+  background-color: rgba(252, 191, 69, 0.5);
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}
+
+.videoArtista {
+  padding: 15px;
+}
+
+.videoArtista iframe {
+  width: 95%;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.listaCanciones {
+  margin: 0;
+  padding: 0;
+}
+
+.listaCanciones ul li {
+  list-style: decimal;
+}
+
+/* ------------------------- ENLACES RÁPIDOS A OTROS GENEROS ------------------------- */
+
+.otros-generos {
+  width: 100%;
+  padding: 1rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.otros-generos a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.otros-generos a img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+}
+
+#otros-generos {
+  color: var(--ArgCeleste);
+  text-align: center;
+}
+
+.generos-texto {
+  position: absolute;
+  color: white;
+  background-color: rgba(29, 28, 28, 0.9);
+  width: 100%;
+  text-align: center;
+  top: calc(100% / 2.5);
+  font-size: 1.5rem;
+}
+
+.otros-generos a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: ease-in-out 0.4s;
+  -webkit-transition: ease-in-out 0.4s;
+  -moz-transition: ease-in-out 0.4s;
+  -ms-transition: ease-in-out 0.4s;
+  -o-transition: ease-in-out 0.4s;
+  box-shadow: 0 0 9px black;
+}

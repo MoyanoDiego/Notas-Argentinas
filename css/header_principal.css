@@ -1,0 +1,102 @@
+.encabezado {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(ArgCeleste);
+  color: var(--ArgBlanco);
+  text-shadow: 1px 1px 1px black;
+}
+
+.portada {
+  width: var(--AnchoWeb);
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulo {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  font-size: clamp(0.5rem, 8vh + 1rem, 5rem);
+  text-shadow: 40px 40px 10px black;
+  font-family: "Kalam-bold";
+  text-transform: uppercase;
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+}
+
+.portada img {
+  position: absolute;
+  left: 15rem;
+  z-index: -1;
+  width: 150px;
+  height: auto;
+  filter: grayscale(80%);
+  transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-filter: grayscale(80%);
+}
+
+.texto-titulo {
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+
+.parrafo-titulo {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(0.5rem, 1.5rem, 2rem);
+  text-shadow: 1px 1px 1px black;
+  width: 60%;
+}
+
+.parrafo-titulo q {
+  align-self: flex-end;
+}
+
+.pop {
+  position: absolute;
+  width: var(--AnchoWeb);
+  height: 70%;
+  top: 65%;
+  left: 10%;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+  border: 3px solid black;
+  background-image: url(../img/recursos/pop1.jpeg);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: slider 5s;
+  -webkit-animation: slider 5s;
+}
+
+@keyframes slider {
+  from {
+    background-position: top;
+  }
+
+  to {
+    background-position: center;
+  }
+}
