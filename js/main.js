@@ -54,5 +54,10 @@ window.onload = function () {
 };
 function bienvenido() {
   let email = document.getElementById("email").value;
+    let contenedorFormulario = document.getElementsByClassName(
+    "contenedor-formulario"
+  );
+
+  contenedorFormulario.style.display = "none";
   alert(`Bienvenido ${email} a Notas Argentinas`);
   }
