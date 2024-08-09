@@ -49,4 +49,10 @@ window.onload = function () {
       bur.classList.toggle("barras");
     }
   });
+
+
 };
+function bienvenido() {
+  let email = document.getElementById("email").value;
+  alert(`Bienvenido ${email} a Notas Argentinas`);
+  }
