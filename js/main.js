@@ -52,10 +52,16 @@ window.onload = function () {
 
 
 };
+
+// FUNCION MENSAJE BIENVENIDA CORREO --------------------
+
 function bienvenido() {
   let email = document.getElementById("email").value;
   let contenedorFormulario = document.querySelector(".contenedor-formulario");
+  let ventanaModal = document.querySelector(".pantallaCompleta");
+  let emailUsuario = document.querySelector(".emailUsuario");
 
+  ventanaModal.style.display = "block";
+  emailUsuario.innerHTML = `${email}`;
   contenedorFormulario.style.display = "none";
-  alert(`Bienvenido ${email} a Notas Argentinas`);
-  }
+}
