@@ -497,3 +497,66 @@ footer p {
   font-size: 1rem;
 }
 
+/* ------------------------- VENTANA MODAL DE FORMULARIO EMAIL ------------------------- */
+
+.pantallaCompleta {
+  position: relative;
+  display: none;
+  border-radius: 50px 0px 50px 0px;
+  box-shadow: 2px 2px 8px black;
+  width: 90%;
+  height: auto;
+  border: 2px solid gray;
+  margin: auto;
+  padding: 0.3rem;
+  background-color: var(--ArgCeleste);
+  color: var(--ArgBlanco);
+  font-size: 3rem;
+  -webkit-border-radius: 50px 0px 50px 0px;
+  -moz-border-radius: 50px 0px 50px 0px;
+  -ms-border-radius: 50px 0px 50px 0px;
+  -o-border-radius: 50px 0px 50px 0px;
+}
+
+.pantallaCompleta p {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.pantallaCompleta p:nth-child(1),
+.pantallaCompleta p:nth-child(2) {
+  margin: 2rem;
+}
+
+.pantallaCompleta img:first-child {
+  width: 50px;
+  height: 50px;
+}
+
+.pantallaCompleta img:last-child {
+  width: 70px;
+  height: 70px;
+}
+
+.bienvenido-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailUsuario {
+  background-color: var(--ArgBlanco);
+  color: var(--ArgCeleste);
+  padding: 0 0.5rem;
+  box-shadow: 0px 0px 1px black;
+  border-radius: 18px 0px 18px 0px;
+  -webkit-border-radius: 18px 0px 18px 0px;
+  -moz-border-radius: 18px 0px 18px 0px;
+  -ms-border-radius: 18px 0px 18px 0px;
+  -o-border-radius: 18px 0px 18px 0px;
+}
+
+.bienvenido-logos img:first-child {
+  margin-right: 0.51rem;
+}
