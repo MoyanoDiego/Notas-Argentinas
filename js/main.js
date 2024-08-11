@@ -64,4 +64,5 @@ function bienvenido() {
   ventanaModal.style.display = "block";
   emailUsuario.innerHTML = `${email}`;
   contenedorFormulario.style.display = "none";
+  window.alert(`Gracias por suscrbirte a nuestro Newsletter ${email}`);
 }
