@@ -49,11 +49,7 @@ window.onload = function () {
       bur.classList.toggle("barras");
     }
   });
-
-
 };
-
-// FUNCION MENSAJE BIENVENIDA CORREO --------------------
 
 function bienvenido() {
   let email = document.getElementById("email").value;
@@ -64,5 +60,4 @@ function bienvenido() {
   ventanaModal.style.display = "block";
   emailUsuario.innerHTML = `${email}`;
   contenedorFormulario.style.display = "none";
-  window.alert(`Gracias por suscrbirte a nuestro Newsletter ${email}`);
 }
