@@ -137,7 +137,7 @@ main {
 
 .seccion1 p {
   padding-bottom: 2em;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   width: var(--AnchoWeb);
   margin: auto;
   text-align: center;
@@ -267,7 +267,7 @@ main {
   margin: auto;
   padding-bottom: 2rem;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-shadow: 1px 1px 1px black;
 }
 
