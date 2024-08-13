@@ -60,4 +60,5 @@ function bienvenido() {
   ventanaModal.style.display = "block";
   emailUsuario.innerHTML = `${email}`;
   contenedorFormulario.style.display = "none";
+  alert(`Gracias por suscribirte a nuestro Newsletter ${email} Bienvenido a Notas Argentinas`);
 }
