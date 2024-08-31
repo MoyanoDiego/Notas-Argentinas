@@ -39,7 +39,7 @@ body {
 }
 
 /* ------------------------- Botones redes sociales ------------------------- */
-.contenedor-fb {
+.fb-like {
   display: flex;
   justify-content: center;
 }
