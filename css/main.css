@@ -42,8 +42,7 @@ body {
 .fb-like {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  margin: auto;
 }
 
 .fb-comentarios {
